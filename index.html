@@ -11,23 +11,34 @@
 
     <link rel="icon" type="image/svg" href="./assets/img/favicon.svg" />
 
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
     <title>Meu Perfil</title>
 </head>
 
 <body>
 
+
     <header>
 
-        <div id="header_content">
+
+        <div id="header_content" class="flex">
+
 
             <div id="titulo">
+
+
                 <h1>Leonardo de Paula</h1>
 
             </div>
 
+
             <div id="menu">
 
+
                 <nav>
+
 
                     <ul id="menu">
                         <li>
@@ -46,15 +57,21 @@
 
     </header>
 
+
     <main>
 
-        <section id="about">
 
-            <h2>Sobre Leonardo</h2>
+        <section id="about" class="flex_start">
 
-            <div id="conteudo">
 
-                <img src="./assets/img/user_01.jpg" alt="Foto do criador desse conteudo" />
+            <h2>Sobre mim</h2>
+
+
+            <div id="conteudo" class="flex">
+
+
+                <img src="./assets/img/user_01.jpg" alt="Foto do criador desse conteudo" class="img_profile" />
+
 
                 <article id="sobre_texto">
 
@@ -78,14 +95,17 @@
 
         </section>
 
-        <section id="video">
+
+        <section id="video" class="flex_start">
 
             <h2>Meu vídeo favorito:</h2>
 
-            <div id="youtube">
 
-                <iframe width="560" height="315" src="https://www.youtube.com/watch?v=EFXxXFHpS0M" frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            <div id="youtube" class="flex">
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Z3_mtwMMuGI?si=F1QiiDYSfsPG3nF0"
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
                 </iframe>
 
             </div>
@@ -94,18 +114,17 @@
 
     </main>
 
-    <footer>
-
+    <footer class="flex">
         <section id="redes_sociais">
 
             <a href="">
-                <img src="assets/img/linkedin.svg" alt="LinkedIn" />
+                <img src="assets/img/linkedin.svg" alt="LinkedIn" class="social_icon" />
             </a>
             <a href="">
-                <img src="assets/img/github.svg" alt="Github" />
+                <img src="assets/img/github.svg" alt="Github" class="social_icon" />
             </a>
             <a href="">
-                <img src="assets/img/instagram.svg" alt="Instagram" />
+                <img src="assets/img/instagram.svg" alt="Instagram" class="social_icon" />
             </a>
 
         </section>

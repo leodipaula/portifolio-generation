@@ -11,18 +11,28 @@
 
     <link rel="icon" type="image/svg" href="./assets/img/favicon.svg" />
 
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
     <title>Meu Perfil</title>
 </head>
 
 <body>
-    <header>
-        <div id="header_content">
-            <div id="titulo">
-                <h1>Leonardo de Paula</h1>
 
+    <header>
+
+        <div id="header_content" class="flex">
+
+            <div id="titulo">
+
+                <h1>Leonardo de Paula</h1>
             </div>
+
+
             <div id="menu">
+
                 <nav>
+
                     <ul id="menu">
                         <li>
                             <a href="index.html">Home</a>
@@ -31,38 +41,36 @@
                             <a href="contato.html">Contato</a>
                         </li>
                     </ul>
-
                 </nav>
-
             </div>
-
         </div>
-
     </header>
-    <main>
-        <section id="contact">
-            <form action="#" method="submit">
 
+
+    <main>
+        <div id="contact" class="flex">
+
+            <form action="#" method="submit">
                 <label for="nome">Nome: </label>
-                <input id="nome" type="text" name="name" placeholder="Digite seu nome" required />
+                <input id="nome" type="text" name="name" placeholder="Digite seu nome" />
                 <span id="txtNome"></span>
 
                 <label for="email">Email: </label>
-                <input id="email" type="email" name="email" placeholder="Digite seu email" required />
+                <input id="email" type="email" name="email" placeholder="Digite seu email" />
                 <span id="txtEmail"></span>
 
                 <label for="subject">Assunto: </label>
-                <input id="subject" type="text" name="subject" placeholder="Digite o título da mensagem" required />
+                <input id="subject" type="text" name="subject" placeholder="Digite o título da mensagem" />
                 <span id="txtSubject"></span>
 
                 <label for="message">Mensagem: </label>
-                <textarea id="message" name="message" placeholder="Digite sua mensagem" required>
-					</textarea>
+                <textarea id="message" name="message" placeholder="Digite sua mensagem"></textarea>
 
                 <button type="submit">Enviar</button>
-
             </form>
-            <article id="mapa">
+
+            <!-- Seção do Google Maps -->
+            <section id="mapa" class="flex_start">
 
                 <div id="endereco">
                     <p>Av. Paulista, 100</p>
@@ -74,31 +82,27 @@
                     width="400" height="250" frameborder="0" style="border: 0" allowfullscreen="" aria-hidden="false"
                     tabindex="0" id="mapa">
                 </iframe>
-
-            </article>
-
-        </section>
-
+            </section>
+        </div>
     </main>
-    <footer>
+
+
+    <footer class="flex">
+
         <section id="redes_sociais">
-
             <a href="">
-                <img src="assets/img/linkedin.svg" alt="LinkedIn" />
+                <img src="assets/img/linkedin.svg" alt="LinkedIn" class="social_icon" />
             </a>
             <a href="">
-                <img src="assets/img/github.svg" alt="Github" />
+                <img src="assets/img/github.svg" alt="Github" class="social_icon" />
             </a>
             <a href="">
-                <img src="assets/img/instagram.svg" alt="Instagram" />
+                <img src="assets/img/instagram.svg" alt="Instagram" class="social_icon" />
             </a>
-
         </section>
 
         <h3>Feito com 🧡 por Leonardo de Paula - 2025</h3>
-
     </footer>
-
 </body>
 
 </html>
